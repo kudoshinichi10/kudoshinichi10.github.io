@@ -66,27 +66,20 @@ nav a:hover {
     width: 80%;
 }
 
-.box-container .forwards {
+.box-container{
     display: flex;
-    flex-wrap: wrap;   
-}
-
-.box-container .midfielders {
-    display: flex;
-    flex-wrap: wrap;
-}
-.box-container .defenders {
-    display: flex;
-    flex-wrap: wrap;
-}
-.box-container .goalkeepers {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.box-container div.box {
     flex-direction: column;
+}
+
+.box-container > div {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-container > div.box {
+    flex-grow: 1;
+
 }
 
 .box {
@@ -97,7 +90,7 @@ nav a:hover {
     padding: 20px;
     margin-top: 20px;
     font-size: 15px;
-    width: 30%;
+    width: 250px;
     background-color: #c00310;
 }
 
